@@ -3,7 +3,7 @@ const router = express.Router();
 const connectToDatabase = require('./db');
 
 // GET search by category
-router.get('/api/search', async (req, res) => {
+router.get('/', async (req, res) => {
   try {
     const db = await connectToDatabase();
     const category = req.query.category;
